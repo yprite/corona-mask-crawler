@@ -48,7 +48,7 @@ def get(url):
     return req.text
 
 def send_message_telegram(msg):
-    bot = telegram.Bot('879043364:AAGDXv6TvnBGFt5qatSnw92FqZKW6STWsT0')
+    bot = telegram.Bot('YOUR-TOKEN')
     bot.sendMessage(chat_id = '@terranscv', text=msg)
 
 def parser(data, now):
